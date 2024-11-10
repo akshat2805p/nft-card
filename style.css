@@ -1,0 +1,118 @@
+body{
+  display: flex;
+  justify-content: center;
+  background-color: hsl(216, 55%, 11%);
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  background-color: hsl(214, 50%, 16%);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  height: 480px;
+}
+
+.photu{
+  display: flex;
+  justify-content: center; 
+  background-image: url(" images/image-equilibrium.jpg");
+  width: 100%;
+  background-position: center center;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  top: 0%;
+  border-radius: 12px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: -1%; 
+  margin-left: -1%;
+  color:  hsl(0, 0%, 100% );
+  font-size: 1.5rem;
+  font-weight: 700;
+    
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color:  hsl(215, 51%, 70%);
+  font-size: 0.9rem;
+  width: 100%;
+  text-wrap: wrap;
+  line-height: 18px;
+}
+
+
+.icon{
+  color:hsl(215, 51%, 70%);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+
+}
+
+.name{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content:space-around;
+  width: 105%;
+  color: hsl(192, 63%, 55%);
+  margin-top:6%;
+  margin-bottom: -8%;
+  
+}
+
+#lodu{
+  color: hsl(192, 63%, 55%);
+}
+
+
+.name img{
+    height: 35px;
+    width: 35px;
+    transform: translateY(-40%);
+    margin-right: -30px;
+  }
+
+  .chut{
+    left: -40px;
+    color: white;
+  }
+
+  .content:hover{
+    color:hsl(179, 75%, 46%);
+  }
+
+  .photu::after{
+    content: "";
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(192, 63%, 55%, 50%);
+    background-image: url("./images/icon-view.svg");
+    background-position: center center;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 12px;
+    display: none;
+    width: 250px;
+    
+  }
+.photu:hover::after{
+  display: block;
+
+}
